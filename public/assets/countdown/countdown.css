@@ -1,0 +1,115 @@
+.wrap {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 310px;
+  }
+  
+  /* Countdown */
+  .countdown {
+  width: auto;
+  margin: 0;
+  }
+
+  .countdown .bloc-time {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  }
+
+  .countdown .bloc-time:last-child {
+  margin-right: 0;
+  }
+
+  .countdown .count-title {
+  display: block;
+  margin-bottom: 15px;
+  font: normal 0.94em 'Lato', sans-serif;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  }
+
+  .countdown .figure {
+  height: 60px;
+  width: 40px;
+  margin-right: 2px;
+  background: linear-gradient(to bottom, #9f1e23 50%, #aa3438 50%);
+  border-radius: 8px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+  }
+
+  .countdown .figure:last-child {
+  margin-right: 0;
+  }
+  .countdown .figure > span {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ffffff;
+  }
+
+  .btn-cta {
+      background-color: #9f1e23;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  @keyframes piscar {
+      0% {
+          background-color: #9f1e23;
+      }
+      50% {
+          background-color: #ff373d;
+      }
+      100% {
+          background-color: #9f1e23;
+      }
+  }
+
+  .piscante {
+      animation: piscar 1s infinite;
+      padding: 5px 35px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #fff;
+  }
+
+  .piscante:hover {
+    color:#fff !important;
+  }
+
+  .banner-countdown {
+    height: 450px;
+    object-fit:cover;
+    object-position:center;
+  }
+  @media (max-width:998px) {
+    .banner-countdown {
+        height: 300px;
+    }
+  }
+  @media (max-width:700px) {
+    .countdown .bloc-time {
+      margin-right: 8px;
+    }
+    .countdown .figure {
+      height: 50px;
+      width: 30px;
+      margin-right: 0;
+    }
+    .countdown .figure > span {
+      font-size: 2.3rem;
+    }
+    .countdown .count-title {
+      font: normal 0.6em 'Lato', sans-serif;
+    }
+  }
